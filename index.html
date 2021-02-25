@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memelandia</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            margin: 20px;
+            padding: 10px;
+            background: #30ff18;
+            color: #fff;
+        }
+
+        main {
+            border: 3px solid #000;
+            margin: 20px;
+            padding: 15px;
+        }
+
+        .memes {
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid #000;
+        }
+
+        .meme {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .meme img {
+            max-width: 300px;
+            max-height: 300px;
+        }
+
+        footer {
+            margin: 20px;
+            padding: 5px;
+            color: #fff;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Bienvenid@ a Memelandia</h2>
+    </header>
+    <main>
+        <h3>Iré posteando los memes que me hagan gracia</h3>
+        <p>Si me quereis mandar memes hacerlo a <a href="/" id="correo">este correo</a><br>
+        Tambien podeis seguirme en mi <a href="/" id="ig">instagram</a> o pasaros por mi
+        <a href="/" id="github">github</a></p>
+        <section class="memes">
+            <h4>Los memes:</h4>
+            <br>
+            <div class="meme">
+                <p>Primer meme ^^</p>
+                <img src="images/meme1.jpg">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>Por: Adrián Jiménez Pizarro</h4>
+    </footer>
+    <script>
+        document.getElementById("correo")
+            .addEventListener("click", e => {
+                e.preventDefault()
+                alert("adrianjimenez0004@gmail.com")
+            })
+        document.getElementById("ig")
+            .addEventListener("click", e => {
+                e.preventDefault()
+                alert("Instagram: @adrian_almaden")
+            })
+        document.getElementById("github")
+            .addEventListener("click", e => {
+                e.preventDefault()
+                alert("Github: AdriJP")
+            })
+    </script>
+</body>
+</html>
